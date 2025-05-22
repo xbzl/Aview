@@ -1,1 +1,14 @@
+#!name= Aview去广告
+#!author=@无名
+#!icon=https://raw.githubusercontent.com/xbzl/Loon/refs/heads/main/baicizhan1.png
+#!desc= 移除开屏广告
+#!loon_version= 3.3.0(853)
+#!homepage= https://raw.githubusercontent.com/xbzl/Loon/refs/heads/main/README.md
+
+
+[MITM]
+hostname= api.hcciot.com
+
+[Rewrite]
+^https:\/\/api\.hcciot\.com\/CloudServer\/userInfoTask\/v2\/getAdvertiseDetailV2 reject-dict
 
